@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+main {
+  width: 650px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px -10px #333;
+}
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  body {
+    padding: 20px;
+  }
+}
+.brief {
+  padding: 25px 45px 25px;
+}
+@media (max-width: 767px) {
+  .brief {
+    padding: 25px;
+  }
+}
+.brief h2 {
+  font-size: 25px;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+.brief p:first-of-type {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.brief p:last-child {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.price {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.price > div {
+  padding: 25px;
+}
+.price .sub {
+  border-bottom-left-radius: 10px;
+}
+.price .cause {
+  border-bottom-right-radius: 10px;
+}
+.sub {
+  background-color: hsl(179, 62%, 43%)
+}
+@media (max-width: 767px) {
+  .price .sub {
+    border-radius: 0;
+  }
+  .price .cause {
+    border-radius: 0  0 10px 10px;
+  }
+}
+.price h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sub .dollar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.sub .dollar span:first-child {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-right: 10px;
+}
+.sub .dollar span:last-child {
+  color: hsl(180deg 58% 61%);
+}
+.sub p:first-of-type {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 20px;
+}
+.sub .sign {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+  display: block;
+  width: 80%;
+  padding-block: 15px;
+  border-radius: 5px;
+  margin-inline: auto;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 5px 20px 0 hsl(218, 22%, 67%);
+}
+.cause {
+  background-color: hsl(179deg 47% 52%);
+  padding-right: 50px !important;
+}
+@media (max-width: 767px) {
+  .cause {
+    padding: 25px;
+    padding-right: 25px !important;
+  }
+}
+.cause p {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.6;
+}
